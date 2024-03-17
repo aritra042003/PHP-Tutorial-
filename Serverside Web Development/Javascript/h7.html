@@ -1,0 +1,29 @@
+<!-- Document Object Model -->
+<!-- getElementById()
+getElementByTagName()
+getElementByName()
+getElementByClassName() -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1() {
+            var x= document.getElementsByTagName("p")
+            alert(x[0].innerHTML)
+            alert(x[1].innerHTML)
+
+            // alert(x.innerHTML)
+            // x.innerHTML="this is modified paragraph"
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p id="p1">this is a paragraph</p>
+    <p>this is just another poaragraph</p>
+    <button onclick="f1()">click</button>
+</body>
+</html>
